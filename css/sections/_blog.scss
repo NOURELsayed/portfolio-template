@@ -1,0 +1,102 @@
+$primary-color1: linear-gradient(120deg, #202334, #1c1f2f);
+$primary-color2: #f1f1f1;
+
+.light .blogs {
+  .h1 {
+    color: #444;
+  }
+  #owl-demo .item {
+    border: 1px solid #eeeeee;
+    background: #eeeeee;
+    p {
+      color: #a6a6a6;
+      background: #eeeeee;
+    }
+    h3 {
+      background: #eeeeee;
+      color: #222;
+    }
+  }
+  .overlay {
+    background: rgba(0, 0, 0, 0.3);
+  }
+}
+.blogs {
+  background: linear-gradient(120deg, #202334, #1c1f2f);
+  padding: 100px 0;
+  width: 100%;
+  .h1 {
+    font-size: 2.3em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fff;
+    font-family: "Courier New", Courier, monospace;
+    text-transform: capitalize;
+  }
+  .title_bg {
+    color: $primary-color2;
+    background: #468fc2;
+    padding: 0px 5px;
+    border-radius: 6px 0 0 6px;
+    // font-size: 3vw;
+  }
+  .owl-carousel {
+    display: none;
+    position: relative;
+    width: 100%;
+    // -ms-touch-action: pan-y;
+    .owl-wrapper-outer {
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+    }
+    // .owl-item {
+    //   //float: left;
+    // }
+  }
+  #owl-demo .item {
+    margin: 10px;
+    border: 1px solid #f1f1f140;
+    background: #272a3cbd;
+    border-radius: 15px;
+    overflow: hidden;
+    padding-bottom: 0;
+    position: relative;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      transition: all 0.3s ease-in-out;
+      height: 60%;
+    }
+    p {
+      color: #f1f1f19c;
+      padding: 10px;
+      font-size: 14px;
+      margin: 0;
+      background: #272a3cbd;
+    }
+    h3 {
+      text-align: center;
+      background: #272a3cbd;
+      margin-bottom: 0;
+      color: #f1f1f1;
+      font-size: 15px;
+      padding-bottom: 18px;
+    }
+  }
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 222;
+    display: none;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+  }
+}

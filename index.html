@@ -1,0 +1,1044 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link href="./fontawesome-free-5.15.1-web/css/all.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css"
+    />
+    <!--load all styles -->
+    <title>Document</title>
+  </head>
+  <body class="switch">
+    <div class="container-fluid">
+      <div class="row">
+        <!-- /* start cover section  */ -->
+        <div id="main">
+          <button class="openbtn" onclick="openNav()">☰</button>
+          <aside id="mySidebar" class="col-md-4 sidebar">
+            <div class="cont_img">
+              <img src="imgs/aside/Untitled-31.png" />
+              <div class="overlay"></div>
+            </div>
+            <h2 class="text-center">Norhan elsayed</h2>
+            <div class="info">
+              <ul class="list list-unstyled">
+                <li>
+                  <i class="fas fa-home chang_backcolor"> </i>
+                  <a href="#" class="chang_color" data-scroll="#home"> home </a>
+                </li>
+                <li>
+                  <i class="fas fa-address-card"></i>
+                  <a href="#" data-scroll="#about"> about </a>
+                </li>
+                <li>
+                  <i class="fas fa-synagogue"></i>
+                  <a href="#" data-scroll="#services"> services </a>
+                </li>
+                <li>
+                  <i class="fab fa-staylinked"></i>
+                  <a href="#" data-scroll="#resume"> resume </a>
+                </li>
+                <li>
+                  <i class="fas fa-igloo"></i>
+                  <a href="#" data-scroll="#portfolio"> projects </a>
+                </li>
+                <li>
+                  <i class="fas fa-blog"></i>
+                  <a href="#" data-scroll="#blogs"> blogs </a>
+                </li>
+                <li>
+                  <i class="fas fa-envelope-open"></i>
+                  <a href="#" data-scroll="#contact"> contact </a>
+                </li>
+              </ul>
+              <ul class="social list-unstyled">
+                <li>
+                  <a
+                    href="https://www.facebook.com/norhanelsayed22/"
+                    target="_blank"
+                  >
+                    <i class="fab fa-facebook-f"> </i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/NORHANE83470442" target="_blank">
+                    <i class="fab fa-twitter"> </i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/norhan-elsayed-8055b9123/" target="_blank">
+                    <i class="fab fa-linkedin-in"> </i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href=""
+                    target="_blank"
+                  >
+                    <i class="fab fa-stack-overflow"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </aside>
+          <header class="block" id="home">
+            <!-- start control bord -->
+            <div class="control">
+              <div class="setting switch_right">
+                <div class="settingIcon">
+                  <div class="fa fa-cog fa-spin"></div>
+                </div>
+              </div>
+              <h4>color mode</h4>
+              <span class="sun">
+                <i class="fas fa-sun"></i>
+              </span>
+              <span class="moon"> <i class="fas fa-moon"></i> </span>
+              <h3>color style</h3>
+              <ul class="list_color list-unstyled">
+                <li id="demo" data-color="blue" onclick="changeColor()"></li>
+                <li id="green" data-color="green" onclick="changeColor()"></li>
+                <li
+                  id="yellow"
+                  data-color="yellow"
+                  onclick="changeColor()"
+                ></li>
+                <li id="palev" data-color="palev" onclick="changeColor()"></li>
+                <li id="red" data-color="red"></li>
+                <li data-color="purple"></li>
+              </ul>
+              <button class="reset">reset</button>
+            </div>
+            <!-- end control bord -->
+            <!-- <div class="overlay"></div> -->
+          </header>
+          <div class="col-md-8">
+            <header class="block">
+              <!-- start the middel title -->
+              <!-- <div class="middel text-center">
+                <h2><span>hel</span>lo world!</h2>
+                <div class="description">
+                  <p>I'am</p>
+                  <ul class="list-unstyled">
+                    <li
+                      class="active animate__backInRight"
+                      style="left: 0px; opacity: 1"
+                    >
+                      developer
+                    </li>
+                  </ul>
+                </div>
+              </div> -->
+              <!-- end the middel title -->
+            </header>
+          </div>
+        </div>
+        <!-- <div class="overlay"></div> -->
+
+        <!-- /* end cover section */ -->
+
+        <!-- start navbar -->
+        <nav>
+          <button type="button" class="collapsible">
+            <div class="bar_nav"><i class="fas fa-bars"></i></div>
+          </button>
+          <div class="content">
+            <div class="info">
+              <ul class="list_nav list-unstyled text-center">
+                <li>
+                  <a href="#" class="chang_color" data-scroll="#home"> home </a>
+                </li>
+                <li>
+                  <a href="#" data-scroll="#about"> about </a>
+                </li>
+                <li>
+                  <a href="#" data-scroll="#services"> services </a>
+                </li>
+                <li>
+                  <a href="#" data-scroll="#resume"> resume </a>
+                </li>
+                <li>
+                  <a href="#" data-scroll="#portfolio"> portfolio </a>
+                </li>
+                <li>
+                  <a href="#" data-scroll="#blogs"> blogs </a>
+                </li>
+                <li>
+                  <a href="#" data-scroll="#contact"> contact </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <!-- end navbar -->
+
+        <!-- start about section -->
+        <section class="about_me block" id="about">
+          <div class="container">
+            <h2 class="h1 text-center">
+              <span class="bg-color"> a</span>bout me
+            </h2>
+            <p class="description lead">
+              i am Front-end developer and i am Seeking a Front-end Developer
+              position in a stable company where I can use my skills to benefit
+              the company
+            </p>
+
+            <!-- start info --------------------------->
+            <div class="info">
+              <div class="row">
+                <!-- start row one  -->
+                <div class="col-lg">
+                  <div class="item">
+                    <span class="title"> age </span>
+                    <i class="fas fa-calculator"></i>
+                    <h3>age:</h3>
+                    <span> 26 </span>
+                  </div>
+                </div>
+                <div class="col-lg">
+                  <div class="item">
+                    <span class="title"> location </span>
+                    <i class="fas fa-map-marked-alt"></i>
+                    <h3>location:</h3>
+                    <span>Cairo-Egypt </span>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <!-- start row two  -->
+                <div class="col-lg">
+                  <div class="item">
+                    <span class="title"> degree </span>
+                    <i class="fas fa-user-graduate"></i>
+                    <h3>degree:</h3>
+                    <span> Bachelor of Computer information system </span>
+                  </div>
+                </div>
+                <div class="col-lg">
+                  <div class="item">
+                    <span class="title"> whatsapp </span>
+                    <i class="fab fa-whatsapp"></i>
+                    <h3>whatsapp:</h3>
+                    <span> 011 446 945 11 </span>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <!-- start row three  -->
+                <div class="col-lg">
+                  <div class="item">
+                    <span class="title"> phone </span>
+                    <i class="fas fa-phone"></i>
+                    <h3>phone:</h3>
+                    <span> 01061859699 </span>
+                  </div>
+                </div>
+                <div class="col-lg">
+                  <div class="item">
+                    <span class="title"> mail </span>
+                    <i class="far fa-envelope"></i>
+                    <h3>mail:</h3>
+                    <span class="mail"> nourelsayed538@gmail.com </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="text-center">
+              <a
+                href="https://drive.google.com/file/d/1D2UrJfPFkGyWIm_mGA9bclBuGYOP6z8U/view?usp=sharing"
+              >
+                download my <span class="cv_btn"> cv </span>
+              </a>
+            </button>
+            <!-- end info --------------------------->
+          </div>
+        </section>
+        <!-- end about section -->
+
+        <!-- start service section -->
+        <section class="services block text-center" id="services">
+          <h2 class="h1 text-center"><span>s</span>ervices</h2>
+          <div class="container">
+            <div class="row">
+              <!-- start row one  -->
+              <div class="col-lg">
+                <div class="item">
+                  <i class="fas fa-paint-brush"></i>
+                  <h3>graphic design</h3>
+                  <p>
+                    survived not only five centuries, but also the leap into
+                    electronic typesetting, electronic typesetting,
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg">
+                <div class="item">
+                  <i class="fas fa-file-code"></i>
+                  <h3>web development</h3>
+                  <p>
+                    survived not only five centuries, but also the leap into
+                    electronic typesetting, electronic typesetting,
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <!-- start row two  -->
+              <div class="col-lg">
+                <div class="item">
+                  <i class="fas fa-tape"></i>
+                  <h3>web design</h3>
+                  <p>
+                    survived not only five centuries, but also the leap into
+                    electronic typesetting, electronic typesetting,
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg">
+                <div class="item">
+                  <i class="fas fa-search-dollar"></i>
+                  <h3>media marketing</h3>
+                  <p>
+                    survived not only five centuries, but also the leap into
+                    electronic typesetting, electronic typesetting,
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <!-- start row three  -->
+              <div class="col-lg">
+                <div class="item">
+                  <i class="fas fa-puzzle-piece"></i>
+                  <h3>advetising</h3>
+                  <p>
+                    survived not only five centuries, but also the leap into
+                    electronic typesetting, electronic typesetting,
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg">
+                <div class="item">
+                  <i class="fas fa-chart-bar"></i>
+                  <h3>analytics</h3>
+                  <p>
+                    survived not only five centuries, but also the leap into
+                    electronic typesetting, electronic typesetting,
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- end service section -->
+
+        <!-- start resume -->
+        <section class="resume block" id="resume">
+          <h2 class="h1 text-center"><span>r</span>esume</h2>
+          <div class="container">
+            <div class="row">
+              <div class="col-md column">
+                <!-------- MY EXPERIENCE -------------->
+                <h2 class="big_titel">
+                  <i class="fas fa-list-alt"></i> my experience
+                </h2>
+                <div class="item">
+                  <!-- start item one -->
+                  <div class="year">2017</div>
+                  <div class="cont_info">
+                    <!-- the info -->
+                    <h2 class="small_title">student</h2>
+                    <div class="info">
+                      <h6>Bethany Services, Grand Rapids, MI</h6>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Morbi ultricies eu magna non rhoncus. Ut eleifend,
+                        libero sed gravida cursus, ipsum eros pretium neque, sit
+                        amet sollicitudin massa tortor sed est.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <!-- start item two  -->
+                  <div class="year">2019</div>
+                  <div class="cont_info">
+                    <!-- the info -->
+                    <h2 class="small_title">student</h2>
+                    <div class="info">
+                      <h6>Bethany Services, Grand Rapids, MI</h6>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Morbi ultricies eu magna non rhoncus. Ut eleifend,
+                        libero sed gravida cursus, ipsum eros pretium neque, sit
+                        amet sollicitudin massa tortor sed est.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <!-- start item three -->
+                  <div class="year">2020</div>
+                  <div class="cont_info">
+                    <!-- the info -->
+                    <h2 class="small_title">student</h2>
+                    <div class="info">
+                      <h6>Bethany Services, Grand Rapids, MI</h6>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Morbi ultricies eu magna non rhoncus. Ut eleifend,
+                        libero sed gravida cursus, ipsum eros pretium neque, sit
+                        amet sollicitudin massa tortor sed est.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md">
+                <!------------   MY EDUCATIONS   -->
+                <h2 class="big_titel">
+                  <i class="fas fa-graduation-cap"></i> my educations
+                </h2>
+                <div class="item">
+                  <!-- start item one -->
+                  <div class="year">2017</div>
+                  <div class="cont_info">
+                    <!-- the info -->
+                    <h2 class="small_title">student</h2>
+                    <div class="info">
+                      <h6>Bethany Services, Grand Rapids, MI</h6>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Morbi ultricies eu magna non rhoncus. Ut eleifend,
+                        libero sed gravida cursus, ipsum eros pretium neque, sit
+                        amet sollicitudin massa tortor sed est.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <!-- start item two -->
+                  <div class="year">2018</div>
+                  <div class="cont_info">
+                    <!-- the info -->
+                    <h2 class="small_title">student</h2>
+                    <div class="info">
+                      <h6>Bethany Services, Grand Rapids, MI</h6>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Morbi ultricies eu magna non rhoncus. Ut eleifend,
+                        libero sed gravida cursus, ipsum eros pretium neque, sit
+                        amet sollicitudin massa tortor sed est.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <!-- start item three -->
+                  <div class="year">2019</div>
+                  <div class="cont_info">
+                    <!-- the info -->
+                    <h2 class="small_title">student</h2>
+                    <div class="info">
+                      <h6>Bethany Services, Grand Rapids, MI</h6>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Morbi ultricies eu magna non rhoncus. Ut eleifend,
+                        libero sed gravida cursus, ipsum eros pretium neque, sit
+                        amet sollicitudin massa tortor sed est.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--------------------------- start my skills ----------->
+            <div class="row skills">
+              <!-----------  MY PRO SKILLS  ---->
+              <div class="col-md">
+                <h2 class="big_titel">
+                  <i class="fas fa-graduation-cap"></i> pro skills
+                </h2>
+                <ul class="list-unstyled">
+                  <li class="item">
+                    <h5>html5 , css3</h5>
+                    <div class="progres">
+                      <span class="prog pro_85"> </span>
+                      <span class="title title_85"> 85% </span>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <h5>javascript , jquery</h5>
+                    <div class="progres">
+                      <span class="prog pro_70"> </span>
+                      <span class="title title_70"> 70% </span>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <h5>jsDom , jsBom</h5>
+                    <div class="progres">
+                      <span class="prog pro_80"> </span>
+                      <span class="title title_80"> 80% </span>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <h5>bootstrap 3 , bootstrap 4</h5>
+                    <div class="progres">
+                      <span class="prog pro_90"> </span>
+                      <span class="title title_90"> 90% </span>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <h5>Sass , Pugjs</h5>
+                    <div class="progres">
+                      <span class="prog pro_85"> </span>
+                      <span class="title title_85"> 85% </span>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <h5>Git , Github</h5>
+                    <div class="progres">
+                      <span class="prog pro_75"> </span>
+                      <span class="title title_75"> 75% </span>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <h5>angular , firebase</h5>
+                    <div class="progres">
+                      <span class="prog pro_60"> </span>
+                      <span class="title title_60"> 60% </span>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <h5>photoshop</h5>
+                    <div class="progres">
+                      <span class="prog pro_60"> </span>
+                      <span class="title title_60"> 60% </span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <!-----------  MY PERSONAL SKILLS   ---->
+              <div class="col-md">
+                <h2 class="big_titel">
+                  <i class="fas fa-graduation-cap"></i> personal skills
+                </h2>
+                <ul class="list-unstyled">
+                  <li class="item">
+                    <h5>team work</h5>
+                    <div class="progres">
+                      <span class="prog per_prog_80"> </span>
+                      <span class="title per_title_80"> 80% </span>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <h5>communications</h5>
+                    <div class="progres">
+                      <span class="prog per_prog_90"> </span>
+                      <span class="title per_title_90"> 90% </span>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <h5>creative</h5>
+                    <div class="progres">
+                      <span class="prog per_prog_60"> </span>
+                      <span class="title per_title_60"> 60% </span>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <h5>organisation</h5>
+                    <div class="progres">
+                      <span class="prog per_prog_75"> </span>
+                      <span class="title per_title_75"> 75% </span>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <h5>english</h5>
+                    <div class="progres">
+                      <span class="prog per_prog_70"> </span>
+                      <span class="title per_title_70"> 70% </span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!--  END ROW -->
+            </div>
+            <!--  END CONTAINER   -->
+          </div>
+        </section>
+        <!-- end resume -->
+
+        <!-- start portfolio section -->
+        <section class="portfolio block" id="portfolio">
+          <h2 class="h1 text-center"><span>P</span>rojects</h2>
+          <div class="container">
+            <div class="row">
+              <div class="column col-lg">
+                <!-- column one -->
+                <div class="item item_one">
+                  <div class="cont_img">
+                    <img src="imgaes/GameProjectImage.jpg" />
+                    <div class="overlay">
+                      <h4>GAmeProject</h4>
+                      <a href="https://happy-archimedes-de19ad.netlify.app/">
+                        go to site
+                      </a>
+                    </div>
+                  </div>
+                  <div class="cont_img">
+                    <img src="imgs/portfolio/pomac.PNG" />
+                    <div class="overlay">
+                      <h4>pomac</h4>
+                      <a href="https://pomac.netlify.app/"> go to site </a>
+                    </div>
+                  </div>
+                  <div class="cont_img">
+                    <img src="imgs/portfolio/medtech.PNG" />
+                    <div class="overlay">
+                      <h4>medtech</h4>
+                      <a href="https://medtech.netlify.com"> go to site </a>
+                    </div>
+                  </div>
+                  <div class="cont_img">
+                    <img src="imgs/portfolio/iland.PNG" />
+                    <div class="overlay">
+                      <h4>iLand</h4>
+                      <a href="https://iland.netlify.com"> go to site </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="column col-lg">
+                <!-- column two -->
+                <div class="item item_two">
+                  <div class="cont_img">
+                    <img src="imgaes/GameProjectImage.jpg" />
+                    <div class="overlay">
+                      <h4>Covid-19</h4>
+                      <a href="https://tosave.netlify.app/"> go to site </a>
+                    </div>
+                  </div>
+                  <div class="cont_img">
+                    <img src="imgaes/GameProjectImage.jpg" />
+                    <div class="overlay">
+                      <h4>mitech</h4>
+                      <a href="https://mitech.netlify.app/"> go to site </a>
+                    </div>
+                  </div>
+                  <div class="cont_img">
+                    <img src="imgaes/GameProjectImage.jpg" />
+                    <div class="overlay">
+                      <h4>متنوع</h4>
+                      <a href="https://motanaw3.netlify.com/"> go to site </a>
+                    </div>
+                  </div>
+                  <div class="cont_img">
+                    <img src="imgaes/GameProjectImage.jpg" />
+                    <div class="overlay">
+                      <h4>facebook</h4>
+                      <a href="https://fa-project.netlify.com"> go to site </a>
+                    </div>
+                  </div>
+                  <div class="cont_img">
+                    <img src="imgs/portfolio/germany.PNG" />
+                    <div class="overlay">
+                      <h4>panga</h4>
+                      <a href="https://germany-lo.netlify.com"> go to site </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="column col-lg">
+                <!-- column three -->
+                <div class="item item_three">
+                  <div class="cont_img">
+                    <img src="imgs/portfolio/ostazy.PNG" />
+                    <div class="overlay">
+                      <h4>استاذي</h4>
+                      <a href="https://ostazi.netlify.app/"> go to site </a>
+                    </div>
+                  </div>
+                  <div class="cont_img">
+                    <img src="imgs/portfolio/templates.PNG" />
+                    <div class="overlay">
+                      <h4>templates</h4>
+                      <a href="https://free-templates.netlify.com">
+                        go to site
+                      </a>
+                    </div>
+                  </div>
+                  <div class="cont_img">
+                    <img src="imgs/portfolio/elitcrop.PNG" />
+                    <div class="overlay">
+                      <h4>elitcrop</h4>
+                      <a href="https://elitecrope.netlify.com"> go to site </a>
+                    </div>
+                  </div>
+                  <div class="cont_img">
+                    <img src="imgs/portfolio/china2.png" />
+                    <div class="overlay">
+                      <h4>Made in china</h4>
+                      <a href="https://inchina.netlify.app/"> go to site </a>
+                    </div>
+                  </div>
+                  <div class="cont_img">
+                    <img src="imgs/portfolio/puregym.png" />
+                    <div class="overlay">
+                      <h4>pure gym</h4>
+                      <a href="https://puregym.netlify.app/"> go to site </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- end portfolio section -->
+
+        <!-- start blog section    -->
+        <section class="blogs block" id="blogs">
+          <h2 class="h1 text-center"><span class="title_bg">b</span>logs</h2>
+          <div class="container">
+            <div
+              id="owl-demo"
+              class="owl-carousel owl-theme"
+              style="opacity: 1; display: block"
+            >
+              <div class="owlitem">
+                <div class="item" style="height: 326px">
+                  <img src="imgaes/img1.jpeg" alt="Owl Image" />
+                  <p>10 tips for drawing with coloured pencils</p>
+                  <h3>desgin</h3>
+                  <div class="overlay"></div>
+                </div>
+              </div>
+              <div class="owlitem">
+                <div class="item" style="height: 326px">
+                  <img src="imgaes/img1.jpeg" alt="Owl Image" />
+                  <p>The single greatest gift to get your friends</p>
+                  <h3>desgin</h3>
+                  <div class="overlay"></div>
+                </div>
+              </div>
+              <div class="owlitem">
+                <div class="item" style="height: 326px">
+                  <img src="imgaes/img1.jpeg" alt="Owl Image" />
+                  <p>Why all women should eat alone</p>
+                  <h3>desgin</h3>
+                  <div class="overlay"></div>
+                </div>
+              </div>
+              <div class="owlitem">
+                <div class="item" style="height: 326px">
+                  <img src="imgaes/img1.jpeg" alt="Owl Image" />
+                  <p>Drawing with coloured pencils</p>
+                  <h3>desgin</h3>
+                  <div class="overlay"></div>
+                </div>
+              </div>
+              <div class="owlitem">
+                <div class="item" style="height: 326px">
+                  <img src="imgaes/img1.jpeg" alt="Owl Image" />
+                  <p>Drawing with coloured pencils</p>
+                  <h3>desgin</h3>
+                  <div class="overlay"></div>
+                </div>
+              </div>
+              <div class="owlitem">
+                <div class="item" style="height: 326px">
+                  <img src="imgaes/img1.jpeg" alt="Owl Image" />
+                  <p>Drawing with coloured pencils</p>
+                  <h3>desgin</h3>
+                  <div class="overlay"></div>
+                </div>
+              </div>
+              <div class="owlitem">
+                <div class="item" style="height: 326px">
+                  <img src="imgaes/img1.jpeg" alt="Owl Image" />
+                  <p>Drawing with coloured pencils</p>
+                  <h3>desgin</h3>
+                  <div class="overlay"></div>
+                </div>
+              </div>
+              <div class="owlitem">
+                <div class="item" style="height: 326px">
+                  <img src="imgaes/img1.jpeg" alt="Owl Image" />
+                  <p>Drawing with coloured pencils</p>
+                  <h3>desgin</h3>
+                  <div class="overlay"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- end blog section -->
+
+        <!-- start contact section -->
+        <section class="contact block" id="contact">
+          <h2 class="h1 text-center">
+            <span class="title_bg"> c</span>ontact me
+          </h2>
+          <div class="container">
+            <h2 class="get_in">get in touch</h2>
+            <div class="row">
+              <!-- start call row -->
+              <div class="col-lg">
+                <div class="call_us text-center">
+                  <i class="fas fa-mobile-alt"></i>
+                  <h6>+2100 931 8 297</h6>
+                  <span> call us </span>
+                </div>
+              </div>
+              <div class="col-lg">
+                <div class="call_us text-center">
+                  <i class="fas fa-envelope"></i>
+                  <h6>ahossamw@gmail.com</h6>
+                  <span> call us </span>
+                </div>
+              </div>
+            </div>
+            <h2 class="cont_title">contact form</h2>
+            <form class="contact_form">
+              <!-- start form -->
+              <div class="row">
+                <!-- start form  row -->
+                <div class="col-lg">
+                  <input type="text" placeholder="Your Name*" required="" />
+                </div>
+                <div class="col-lg">
+                  <input type="email" placeholder="Your E-mail*" required="" />
+                </div>
+              </div>
+              <input type="text" placeholder="Your Subject" required="" />
+              <textarea
+                class="textarea d-block"
+                placeholder="Your Message"
+              ></textarea>
+              <input type="button" value="Submite" />
+            </form>
+          </div>
+          <!-- end container -->
+        </section>
+        <!-- end contact section -->
+
+        <!-- start footer -->
+        <footer>
+          <div class="copy">
+            ©<a href="#"> norhan </a>2020 | all right reserved
+          </div>
+        </footer>
+        <!-- end footer -->
+      </div>
+    </div>
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"
+    ></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script
+      type="text/javascript"
+      src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+      }
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
+    </script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          autoplay: true,
+          autoplayTimeout: 3000,
+          autoplayHoverPause: false,
+          loop: true,
+          margin: 10,
+          nav: true,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 3,
+            },
+            1000: {
+              items: 5,
+            },
+          },
+        });
+      });
+    </script>
+    <script>
+      const switchBtn = document.querySelector(".setting");
+      console.log(switchBtn);
+      switchBtn.addEventListener("click", () => {
+        document.querySelector(".control").classList.toggle("open");
+      });
+
+      function changeColor() {
+        var val = document.getElementById("demo").getAttribute("data-value");
+        alert(val);
+        console.log("val", val);
+      }
+
+      const bg = document.querySelector(".sun");
+      bg.addEventListener("click", function () {
+        document.body.classList.toggle("light");
+        console.log("clicked");
+      });
+      //  const bg= document.querySelector('.sun');
+      //  if(bg){
+      //   bg.addEventListener('click', function(){
+      //    document.body.classList.toggle('light');
+      //  });
+      //  }else{
+      //        const bgg= document.querySelector('.moon');
+      //  bgg.addEventListener('click', function(){
+      //   //  document.body.classList.toggle(!'light');
+      //    console.log("clicked")
+      //  });
+      //  }
+
+      $(".bar").on("click", function () {
+        $("body").toggleClass("switch");
+        if ($("body").hasClass("switch")) {
+          $("body").animate(
+            {
+              paddingLeft: 300,
+            },
+            550
+          );
+          $(".sidebar").animate(
+            {
+              left: 0,
+            },
+            500
+          );
+          $(".container").animate(
+            {
+              paddingLeft: 15,
+              paddingRight: 15,
+            },
+            500
+          );
+          $(".asid_bars").fadeOut();
+          $(".fa-arrow-left").fadeIn();
+          $(".bar").css("right", "-25px");
+        } else {
+          $("body").animate(
+            {
+              paddingLeft: 0,
+            },
+            500
+          );
+          $(".sidebar").animate(
+            {
+              left: -300,
+            },
+            500
+          );
+          $(".container").animate(
+            {
+              paddingLeft: 100,
+              paddingRight: 100,
+            },
+            500
+          );
+          $(".asid_bars").fadeIn();
+          $(".fa-arrow-left").fadeOut();
+          $(".bar").css("right", "-35px");
+        }
+      });
+      /********* start hover icons  *********/
+      $(".sidebar .list li").on("click", function () {
+        $(this)
+          .children("i")
+          .addClass("chang_backcolor")
+          .parent("li")
+          .siblings()
+          .children("i")
+          .removeClass("chang_backcolor");
+        $(this)
+          .children("a")
+          .addClass("chang_color")
+          .parent("li")
+          .siblings()
+          .children("a")
+          .removeClass("chang_color");
+      });
+
+      /** start go to section **/
+      $(".sidebar .list li").on("click", function () {
+        $("body,html").animate(
+          {
+            scrollTop: $($(this).children("a").data("scroll")).offset().top + 1,
+          },
+          1000
+        );
+      });
+      /** end go to section   **/
+
+      $(window).scroll(function () {
+        $(".block").each(function () {
+          if ($(window).scrollTop() > $(this).offset().top) {
+            var block_id = $(this).attr("id");
+            $("aside .list li a").removeClass("chang_color");
+            $("aside .list li i").removeClass("chang_backcolor");
+            $('aside .list li a[data-scroll="#' + block_id + '"]').addClass(
+              "chang_color"
+            );
+            $('aside .list li a[data-scroll="#' + block_id + '"]')
+              .parent("li")
+              .children("i")
+              .addClass("chang_backcolor");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
