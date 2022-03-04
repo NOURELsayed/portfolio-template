@@ -882,7 +882,7 @@ body.light {
 body.light .about_me {
   background: #fff;
 }
-
+.light .sidebar,
 .light .border_between_sections,
 .light .about_me,
 .light .services,
@@ -895,6 +895,7 @@ body.light .about_me {
   border-bottom: 1px solid #eeee;
 }
 
+.light .sidebar,
 .light .border_between_sections,
 .light .about_me,
 .light .services,
